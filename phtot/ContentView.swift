@@ -16,8 +16,17 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        VStack {
+            Text("会员套餐")
+                .fontWeight(.bold)
+                .font(.system(.title))
+            Text("解锁高级功能")
+                .fontWeight(.bold)
+                .font(.system(.title))
+            }
     }
 }
+
 
 #Preview {
     ContentView()
