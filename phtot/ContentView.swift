@@ -9,11 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        Image("shili")
+        .edgesIgnoringSafeArea(.all)
+        .imageScale(.large)
+        .foregroundStyle(.tint)
+        .opacity(0.8)
+        .clipShape(Circle())
+        .overlay(
+                Text("编辑")
+                    .fontWeight(.bold)
+                    .font(.system(size: 24))
+                    .foregroundColor(Color.white)
+                    )
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+           
+                
+            
         }
         .padding()
         VStack {
